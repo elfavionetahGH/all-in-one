@@ -1,0 +1,866 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,600;0,900;1,900&family=Manrope:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/*!--------------HEADER------------*/
+header{
+    background: rgb(64,26,89);
+    background: linear-gradient(273deg, rgb(34, 12, 48) 0%, rgb(66, 13, 13) 69%, rgb(48, 31, 7) 100%);
+    top: 0px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+
+}
+header nav ul li{
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+header nav ul li:hover{
+    transform: scale(1.105);
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+header nav ul li a:hover{
+    color: black;
+    background-color: white;
+}
+header .logo a img{
+    margin-left: 30px;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+/*TODOs----------------MAIN-----------------*/
+main{
+    background-color: black;
+    color: white;
+}
+.hero{
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/fondo-main.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.hero div h1{
+    font-size: 100px;
+}
+.hero div p{
+    font-size: 30px;
+}
+.hero a img{
+    width: 90%;
+    height: auto;
+    transition: 1s;
+}
+.hero a img:hover{
+    transform: scale(1.1);
+}
+/**------------------PRODUCTOS-INDEX-------------*/
+
+.descubre{
+    text-align: center;
+}
+
+.descubre h2{
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+.descubre p{
+    font-size: 20px;
+}
+.descubre .box-productos{
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.descubre .box-productos div{
+    padding: 40px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.descubre .box-productos div:hover{
+    transform: scale(1.05);
+    border: 2px solid white;
+}
+.descubre .box-productos img{
+    width: 300px;
+    height: 250px;
+    transition: 0.3s;
+}
+.descubre .box-productos .pc-size img{
+    width: 210px;
+    height: 290px;
+}
+.descubre .box-productos img:hover{
+    transform: scale(1.07);
+}
+.descubre .box-productos h3{
+    margin-top: 10px;
+}
+
+.novedades{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.novedades h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.novedades .box-novedades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.novedades .box-novedades div{
+    transition: 0.3s;
+}
+.novedades .box-novedades div:hover{
+    transform: scale(1.1);
+}
+
+.novedades .box-novedades img{
+    width: 280px;
+    height: 250px;
+}
+.novedades .box-novedades h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.novedades .box-novedades div a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(93, 14, 167);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.registro-index div{
+    background-image: url("../img/fondo-main.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+.registro-index h2{
+    font-size: 40px;
+}
+.registro-index div a{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(93, 14, 167);
+    transition: 0.5s;
+}
+.registro-index div a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*!--------------------MEDIA-QUERY--INDEX-------------------------*/
+
+@media screen and (max-width: 1200px) {
+    .hero{
+        max-width: 100%;
+    }
+    .hero div h1{
+        font-size: 80px;
+        margin-left: 20px;
+    }
+    .hero div p{
+        font-size: 28px;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .hero div h1{
+        font-size: 70px;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .hero div h1{
+        font-size: 60px;
+    }
+    .hero div{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+        padding: 50px;
+    }
+    .hero div h1{
+        font-size: 65px;
+    }
+    .hero div p{
+        font-size: 22px;
+    }
+    .hero a img{
+        width: 70%;
+        height: auto;
+    }
+    .descubre{
+        padding: 30px;
+    }
+    .descubre .box-productos .pc-size{
+        margin-bottom: 100px;
+    }
+    .descubre .box-productos .grafica-index{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        justify-content: center;
+    }
+    header .logo a img{
+        margin: 0px;
+    }
+
+    .hero div p{
+        font-size: 23px;
+    }
+    .descubre{
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 480px) {
+    header{
+        justify-content: center;
+    }
+    header .logo{
+        margin: 0px;
+    }
+    header .logo a img{
+        width: 20%;
+        height: 20%;
+    }
+    .hero{
+        padding: 30px;
+    }
+    .hero div h1{
+        font-size: 35px;
+    }
+    .hero div p{
+        font-size: 15px;
+    }
+    .hero a img{
+        width: 100%;
+        height: auto;
+    }
+    .descubre{
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 320px) {
+    header{
+        position: static;
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    }
+    header .logo a img{
+        width: 65px;
+        height: 65px;
+    }
+    header .navbar ul{
+        font-size: 15px;
+        flex-direction: column;
+    }
+    header .navbar ul li{
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .hero{
+        padding: 20px;
+    }
+    .hero div h1{
+        font-size: 45px;
+    }
+    .hero div p{
+        font-size: 17px;
+    }
+    .descubre{
+        padding: 40px;
+    }
+    .descubre h2{
+        font-size: 40px;
+    }
+    .descubre p{
+        font-size: 15px;
+    }
+    .descubre .box-productos img{
+        width: 200px;
+        height: 200px;
+    }
+    .novedades{
+        padding: 40px;
+    }
+    .novedades h2{
+        font-size: 200%;
+    }
+    .novedades .box-novedades img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/*TODOs-----------------MAIN-CONTACTO-----------------------*/
+.contactanos{
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    background-image: url("../img/fondo-main.png");
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+}
+
+.contactanos .titulo-contactanos .h1-contactanos{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.preguntas-frecuentes{
+    color: black;
+}
+.registro h2{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+
+}
+
+.registro p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.registro .box-formulario{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.registro .box-formulario .tarjeta-formulario{
+    display: flex;
+    padding: 20px;
+    background: rgb(64,26,89);
+    background: linear-gradient(273deg, rgb(34, 12, 48) 0%, rgb(66, 13, 13) 69%, rgb(48, 31, 7) 100%);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.registro .formulario{
+    margin-top: 10px;
+}
+
+
+.ubicacion{
+    text-align: center;
+}
+.ubicacion .mapa iframe{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.ubicacion .preguntas{
+    font-size: 15px;
+    color: white;
+    background-image: url("../img/fondo-main.png");
+}
+.ubicacion .preguntas a{
+    color: white;
+}
+
+
+
+
+
+
+/*TODOs----------------MAIN-NOSOTROS------------------------*/
+.nosotros{
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    background-image: url("../img/fondo-main.png");
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+}
+.nosotros div h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+.contenido-nosotros{
+    text-align: center;
+}
+.contenido-nosotros div h2{
+    font-size: 25px;
+}
+.contenido-nosotros div h3{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TODOs-----------------MAIN-PRODUCTOS--------------------*/
+
+.productos{
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    background-image: url("../img/fondo-main.png");
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.productos div h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+.catalogo .titulo-catalogo h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.catalogo .pc-catalogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.catalogo h3{
+    margin: 1px 0px 5px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.catalogo .pc-catalogo div{
+    margin: 10px;
+    border: 2px solid black;
+
+    width: 330px;
+    height: 420px;
+    text-align: center;
+    background-image: url("../img/fondo-main.png");
+}
+
+.catalogo .pc-catalogo img{
+    width: 326px;
+    height: 350px;
+}
+
+.catalogo div a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(33, 13, 90);
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.catalogo div a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.componentes .titulo-componentes h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.componentes .componentes-catalogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.componentes h3{
+    margin: 1px 0px 5px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.componentes .componentes-catalogo div{
+    margin: 10px;
+    border: 2px solid black;
+
+    width: 330px;
+    height: 420px;
+    text-align: center;
+    background-image: url("../img/fondo-main.png");
+}
+
+.componentes .componentes-catalogo img{
+    width: 326px;
+    height: 350px;
+}
+
+.componentes div a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(33, 13, 90);
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.componentes div a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.consolas .titulo-consolas h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.consolas .consolas-catalogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.consolas h3{
+    margin: 1px 0px 5px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.consolas .consolas-catalogo div{
+    margin: 10px;
+    border: 2px solid black;
+    width: 330px;
+    height: 420px;
+    text-align: center;
+    background-image: url("../img/fondo-main.png");
+}
+
+.consolas .consolas-catalogo img{
+    width: 326px;
+    height: 350px;
+}
+
+.consolas div a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(33, 13, 90);
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.consolas div a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.juegos .titulo-juegos h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.juegos .juegos-catalogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.juegos h3{
+    margin: 1px 0px 5px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.juegos .juegos-catalogo div{
+    margin: 10px;
+    border: 2px solid black;
+    width: 330px;
+    height: 420px;
+    text-align: center;
+    background-image: url("../img/fondo-main.png");
+}
+
+.juegos .juegos-catalogo img{
+    width: 326px;
+    height: 350px;
+}
+
+.juegos div a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(33, 13, 90);
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.juegos div a:hover{
+    background-color: white;
+    color: black;
+}
+
+/**-----------GALERIA-DE-PRODUCTOS---------*/
+.galeria h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 250px;
+    padding: 30px;
+    gap: 15px;
+}
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.grid-galeria div img:hover{
+    transform: scale(1.05);
+}
+.foto1{
+    grid-area: span 2;
+}
+.foto4{
+    grid-area: span 2;
+}
+.foto5{
+    grid-area: span 3;
+}
+.foto6{
+    grid-column: span 2;
+}
+.foto7{
+    grid-column: span 2;
+}
+.foto8{
+    grid-area: span 3;
+}
+.foto9{
+    grid-area: span 2;
+}
+
+/*!--------------------MEDIA-QUERY--PRODUCTOS-------------------------*/
+@media screen and (max-width: 1400px) {
+    .catalogo .pc-catalogo{
+        flex-wrap: wrap;
+    }
+    .componentes .componentes-catalogo{
+        flex-wrap: wrap;
+    }
+    .consolas .consolas-catalogo{
+        flex-wrap: wrap;
+    }
+    .juegos .juegos-catalogo{
+        flex-wrap: wrap;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    header{
+        position: static;
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    }
+    header .logo a img{
+        width: 65px;
+        height: 65px;
+    }
+    header .navbar ul{
+        font-size: 15px;
+        flex-direction: column;
+    }
+    header .navbar ul li{
+        margin: 0px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 992px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) {
+    
+}
+
+
+
+
+
+/*TODOs-----------------MAIN-SERVICIOS---------------------*/
+
+.servicios{
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    background-image: url("../img/fondo-main.png");
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+}
+.servicios div h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+.informacion-servicios{
+    align-items: center;
+}
+.informacion-servicios h2{
+    font-size: 25px;
+    text-align: center;
+}
+.informacion-servicios p{
+    font-size: 20px;
+}
+
+.informacion-servicios div{
+    align-items: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 600px;
+}
+
+
+
+
+
+
+/*!---------------------------FOOTER----------------------------*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+    border-top: 2px solid rgb(255, 255, 255);
+    background: rgb(64,26,89);
+    background: linear-gradient(273deg, rgb(34, 12, 48) 0%, rgb(66, 13, 13) 69%, rgb(48, 31, 7) 100%);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+footer div{
+    margin-top: 20px;
+}
+footer div h4{
+    text-align: center;
+}
+footer div ul{
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+footer .redes a img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition: 0.3s;
+}
+footer .redes a img:hover{
+    transform: scale(1.1);
+}
