@@ -366,13 +366,12 @@ main{
 }
 
 .contactanos .titulo-contactanos .h1-contactanos{
-    font-family: 'Fira Sans', sans-serif;
     font-size: 50px;
     margin-bottom: 10px;
 }
 
 .preguntas-frecuentes{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .registro h2{
     text-align: center;
@@ -423,8 +422,6 @@ main{
 .ubicacion .preguntas a{
     color: white;
 }
-
-
 
 
 
@@ -505,6 +502,8 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items:flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .catalogo h3{
@@ -767,16 +766,6 @@ main{
         margin-top: 10px;
     }
 }
-@media screen and (max-width: 992px) {
-    
-}
-@media screen and (max-width: 768px) {
-    
-}
-@media screen and (max-width: 576px) {
-    
-}
-
 
 
 
